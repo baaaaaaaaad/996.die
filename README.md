@@ -1,8 +1,7 @@
 # Event Timeline
 
-逝者如斯夫，不舍昼夜。
-Thus things flow away day and night.
-Subfile Naming Convention: `/events/YYYY-MM-DD-title.md`
+- Thus things flow away day and night.
+- Subfile Naming Convention: `/events/YYYY-MM-DD-title.md`
 
 ## 2026
 
