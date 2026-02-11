@@ -32,7 +32,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add timeline.md
+          git add README.md
           git diff --cached --quiet || git commit -m "chore: auto update timeline"
 
       - name: Push changes
