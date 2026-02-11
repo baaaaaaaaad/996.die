@@ -3,7 +3,7 @@ from pathlib import Path
 
 root = Path("events")
 lines = ["# Event Timeline\n"]
-lines.append('逝者如斯夫，不舍昼夜。\nThus things flow away day and night.\n')
+lines.append('逝者如斯夫，不舍昼夜。\nThus things flow away day and night.\nSubfile Naming Convention: `/events/YYYY-MM-DD-title.md`')
 
 # 正则表达式匹配日期格式 YYYY-MM-DD
 DATE_PATTERN = re.compile(r'^(\d{4})-(\d{2})-(\d{2})-(.+)$')
@@ -38,4 +38,4 @@ for event in events:
     date_str = f"{event['month']}/{event['day']}"
     lines.append(f"- **{date_str}**: [{event['title']}]({event['file'].as_posix()})")
 
-Path("timeline.md").write_text("\n".join(lines), encoding="utf-8")
+Path("README.md").write_text("\n".join(lines), encoding="utf-8")
