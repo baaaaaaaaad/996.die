@@ -3,7 +3,7 @@ from pathlib import Path
 
 root = Path("events")
 lines = ["# Event Timeline\n"]
-lines.append('逝者如斯夫，不舍昼夜。\nThus things flow away day and night.\nSubfile Naming Convention: `/events/YYYY-MM-DD-title.md`')
+lines.append('\n- Thus things flow away day and night.\n- Subfile Naming Convention: `/events/YYYY-MM-DD-title.md`')
 
 # 正则表达式匹配日期格式 YYYY-MM-DD
 DATE_PATTERN = re.compile(r'^(\d{4})-(\d{2})-(\d{2})-(.+)$')
